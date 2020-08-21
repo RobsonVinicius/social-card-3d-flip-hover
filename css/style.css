@@ -19,7 +19,7 @@ body {
 .card {
   cursor: pointer;
   width: 340px;
-  height: 480px;
+  height: 480px;  
 }
 
 .front, .back {
@@ -28,6 +28,9 @@ body {
   overflow: hidden;
   backface-visibility: hidden;
   position: absolute;
+  box-shadow: 0px 0px 5px cornflowerblue;
+  transition: transform .6s linear;
+  
 }
 
 .front img {
@@ -40,7 +43,7 @@ body {
 
 .back {
   background: #f1f1f1;
-  transform: perspective(600px) rotateY(0deg);
+  transform: perspective(600px) rotateY(180deg);
 }
 
 .back-content {
@@ -71,9 +74,18 @@ body {
   line-height: 18px;
   color: #2c3e50;
   border-radius: 50%;
+  transition: 0.3s ease-in;
 }
 
 .social-media a:hover {
   background: #2e3e50;
   color: white;
+}
+
+.card:hover > .front {
+  transform: perspective(600px) rotateY(-180deg)
+}
+
+.card:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
 }
