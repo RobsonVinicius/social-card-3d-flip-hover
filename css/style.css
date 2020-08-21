@@ -54,6 +54,19 @@ body {
 }
 
 .back-content span {
-  font-size: .96rem;
+  font-size: .95rem;
 }
 
+.social-media {
+  margin: 20px 0;
+}
+
+.social-media a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  border-radius: 50%;
+}
