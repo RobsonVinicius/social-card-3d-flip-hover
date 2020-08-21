@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;  
+  font-family: sans-serif;
 }
 
 body {
@@ -39,10 +40,20 @@ body {
 
 .back {
   background: #f1f1f1;
-  transform: perspective(600px) rotateY(180deg);
+  transform: perspective(600px) rotateY(0deg);
 }
 
 .back-content {
+  width: 100%;
   color: #2c3e50;
-  text-align: center;
+  text-align: center;  
 }
+
+.back-content h2 {
+  font-size: 1.5rem;
+}
+
+.back-content span {
+  font-size: .96rem;
+}
+
