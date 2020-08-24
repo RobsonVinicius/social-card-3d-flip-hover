@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #0f161b;
+  background: #121214; /* #0f161b */
 }
 
 .central {
@@ -28,7 +28,7 @@ body {
   overflow: hidden;
   backface-visibility: hidden;
   position: absolute;
-  box-shadow: 0px 0px 5px cornflowerblue;
+  box-shadow: 0px 0px 10px cornflowerblue;
   transition: transform .6s linear;
   
 }
